@@ -1,0 +1,112 @@
+body{
+	background-color: #02041f;
+}
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: sans serif;
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.loader{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:1031;
+	background-color: #02041f;
+}
+
+span#loading{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+
+div#eye{
+	 background: black;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: 340px;
+    top: 330px;
+    border-radius: 50%;
+    -webkit-animation: blink 2s infinite;
+}
+.eye{
+	margin-left: 17%;
+    margin-top: 2.5%;
+}
+
+img#ptato{
+	width: 70%;
+	height: 70%;
+}
+
+div#potato{
+	background: none;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 300px;
+	top: 300px;
+	z-index: -1;
+}
+
+div#icon{
+	width: 200px;
+	transform: translatey(0px);
+	-webkit-animation: float 3s ease-in-out infinite;
+	margin-left: 23%;
+	margin-top: -40px;
+	background:none;
+	
+}
+div#loading{
+	position: absolute;
+	top: 360px;
+	left: 590px;
+	font-size: 60px;
+}
+
+div#loading span#loading{
+	position: relative;
+  top: 10px;
+  display: inline-block;
+  animation: bounce .4s ease infinite alternate;
+  color: #FFF;
+}
+div#loading span#loading:nth-child(2) { animation-delay: .1s; }
+div#loading span#loading:nth-child(3) { animation-delay: .3s; }
+div#loading span#loading:nth-child(4) { animation-delay: .4s; }
+@keyframes bounce {
+	100% {
+    top: -10px;
+  }
+}

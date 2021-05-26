@@ -1,0 +1,38 @@
+body{
+	background-color: rgb(0,0,0);
+}
+@font-face{
+	font-family: customfonts1; src: url('Adventpro-light.ttf');
+}
+
+@font-face{
+	font-family: customfonts; src: url('GothamLight.ttf');
+}
+.carousel-control-prev,
+.carousel-control-next{
+	width: 5%!important;
+}
+.logo-img1{
+  background: url(settings.svg);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: inline-block;
+}
+.logo-img2{
+  background: url(account.svg);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: inline-block;
+}
+.logo-img3{
+  background: url(history.svg);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  display: inline-block;
+}
+svg{
+	fill: #5271ff;
+}
